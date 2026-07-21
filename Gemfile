@@ -41,6 +41,9 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  # Loads ENV vars from .env for local development/test (APIFY_API_TOKEN, OPENAI_API_KEY, etc.)
+  gem "dotenv-rails"
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -60,5 +63,6 @@ gem "rspec-rails", "~> 8.0", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 6.5", :group => :test
 gem "faker", "~> 3.8", :group => :test
+gem "webmock", "~> 3.24", :group => :test
 
 gem "devise", "~> 5.0"
