@@ -63,6 +63,6 @@ gem "rspec-rails", "~> 8.0", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 6.5", :group => :test
 gem "faker", "~> 3.8", :group => :test
-gem "webmock", "~> 3.24", :group => :test
+gem "webmock", "~> 3.26", :group => :test
 
 gem "devise", "~> 5.0"
